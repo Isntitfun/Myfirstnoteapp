@@ -1,0 +1,147 @@
+.display {
+  padding: 10px;
+  padding-bottom: 80px;
+  margin-top: 50px;
+  /* margin-bottom: 700px; */
+}
+
+.list {
+  padding: 10px;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.category-container {
+  display: grid;
+  justify-content: stretch;
+  align-items: center;
+  color: white;
+  margin-bottom: 6px;
+  transition: 0.3s ease-in;
+}
+
+.txtbox {
+  outline: none;
+  appearance: none;
+  border: none;
+  display: block;
+  background-color: transparent;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.category-title-txtbox {
+  width: 240px;
+  max-width: 240px;
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.item-title-txtbox {
+  width: 250px;
+  max-width: 250px;
+  color: black;
+  font-size: 1.02rem;
+  font-weight: 500;
+}
+
+.item-content-txtbox {
+  outline: none;
+  color: black;
+  font-size: 0.89rem;
+  font-weight: 300;
+  width: 316px;
+  max-width: 316px;
+  overflow: visible;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--signature-black);
+  border-radius: 7px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: var(--category-padding);
+}
+
+.category button {
+  color: var(--console-icon-color);
+  transition: 0.3s;
+}
+
+.category button:hover {
+  color: white;
+}
+
+.active-btn {
+  color: var(--signature-orange) !important ;
+  transition: 0.3s;
+}
+
+.active-btn:hover {
+  color: var(--signature-orange-emphasis) !important;
+}
+
+.item-container {
+  display: grid;
+  align-content: flex-start;
+  padding-left: 18px;
+  margin-top: 6px;
+  height: 0;
+  will-change: height;
+  transition: 0.4s cubic-bezier(0.77, -0.1, 0.175, 1.1);
+  overflow: hidden;
+}
+
+.item-wrapper {
+  display: grid;
+  justify-content: stretch;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: var(--item-padding);
+  background-color: var(--item-color);
+  color: black;
+  border-radius: 7px;
+  transition: 0.3s ease-in;
+}
+
+.item-row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 19px;
+}
+
+.item-row2 {
+  margin-top: 15px;
+  padding: 7px;
+  min-height: 28px;
+}
+
+.item-row2 input {
+  font-size: 0.89rem;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.item-title {
+  text-transform: capitalize;
+  padding-left: 2px;
+  padding-top: 3px;
+}
+
+.item button {
+  color: var(--console-icon-color);
+  transition: 0.3s;
+}
+
+.item button:hover {
+  color: var(--signature-black);
+}
